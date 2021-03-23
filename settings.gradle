@@ -1,0 +1,3 @@
+include ':Dasboardmenu'
+include ':app'
+rootProject.name = "Instagram_Ui_Pts"
