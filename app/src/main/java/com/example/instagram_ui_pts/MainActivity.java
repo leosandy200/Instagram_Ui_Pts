@@ -2,6 +2,7 @@ package com.example.instagram_ui_pts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -28,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
                 if (email.getText().toString().equals("Leosandy") &&
                         password.getText().toString().equals("wahyurismono")) {
                     Toast.makeText(MainActivity.this, "Sukses Login", Toast.LENGTH_LONG).show();
+
+                    // Bikin intent untuk pindah ke activity, isi parameternya adalah context activity dan activity class yang akan dituju
+                    Intent intent = new Intent(getApplicationContext(), DashboardActivity.class);
+                    startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Toast", Toast.LENGTH_LONG).show();
                 }
