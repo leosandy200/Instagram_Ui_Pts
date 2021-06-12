@@ -3,7 +3,8 @@ package com.example.instagram_ui_pts;
 public class RecyclerModel {
 
 //    Menambahkan variabel yang diperlukan dalam recyclerView
-    private String image, name, desc;
+    private String name, desc;
+    private String image;
 
     public RecyclerModel() {
 
@@ -40,4 +41,5 @@ public class RecyclerModel {
     public void setDesc(String desc) {
         this.desc = desc;
     }
+
 }

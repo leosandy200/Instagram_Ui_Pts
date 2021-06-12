@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:id="@+id/id_cardview"
     app:cardCornerRadius="6dp"
-    app:cardElevation="6dp"
+        app:cardElevation="6dp"
     app:cardUseCompatPadding="true">
 
     <RelativeLayout

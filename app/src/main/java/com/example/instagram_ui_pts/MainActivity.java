@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //deklarasi
     EditText email;
     EditText password;
     TextView btn;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
+        //mrngesign
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         btn = (TextView) findViewById(R.id.buttonPanel);

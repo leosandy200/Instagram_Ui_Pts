@@ -37,7 +37,8 @@ dependencies {
 
 //    Menambahkan implementasi Picasso untuk load image dari internet
     implementation 'com.squareup.picasso:picasso:2.71828'
-
+    //
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
     // Menambahkan implementasi cardView dan recyclerView
     implementation "androidx.cardview:cardview:1.0.0"
     implementation "androidx.recyclerview:recyclerview:1.1.0"

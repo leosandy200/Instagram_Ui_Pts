@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -60,6 +61,14 @@ public class DataActivity extends AppCompatActivity {
             public void onItemClick(int position) {
 //                Menampilkan toast nama berdasarkan data yang dipilih
                 Toast.makeText(getApplicationContext(), arrayList.get(position).getName(), Toast.LENGTH_SHORT).show();
+
+                RecyclerModel model = arrayList.get(position);
+
+                Intent intentv = new Intent(getApplicationContext(), detailactyfyty.class);
+                intentv.putExtra("name",model.getName());
+                intentv.putExtra("image", model.getImage());
+                intentv.putExtra("detail", model.getDesc());
+                startActivity(intentv);
             }
         });
 

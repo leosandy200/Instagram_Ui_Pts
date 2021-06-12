@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.instagram_ui_pts">
-
-<!--    Menambahkan permission agar bisa mengakses internet -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Menambahkan permission agar bisa mengakses internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Instagram_Ui_Pts">
-        <activity android:name=".DataActivity"></activity>
+        <activity android:name=".detailactyfyty"></activity>
+        <activity android:name=".DataActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".Dasboartmenu" />
         <activity android:name=".MainActivity">
